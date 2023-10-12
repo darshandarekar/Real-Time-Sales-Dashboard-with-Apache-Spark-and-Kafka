@@ -55,5 +55,40 @@ Follow the instructions in the provided text files to set up the project environ
 1. **Activate Python Virtual Environment:**
    ```bash
    source /path/to/venv/bin/activate
+Install Dependency Python Packages
+bash
+Copy code
+cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_charts
+sudo apt-get install libmysqlclient-dev libssl-dev python3-dev
+pip install -r requirements.txt
+...
+
+Continue with the rest of the setup instructions in the respective installation files.
+
+Project Execution
+Follow these steps to run the Real Time Sales Dashboard:
+
+Run Real-Time Dashboard Application:
+
+```bash
+cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_charts
+python manage.py runserver
+Access the dashboard at http://127.0.0.1:8000/.
+```
+Run Kafka Producer Application (Stream Data Simulator):
+
+```bash
+cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/kafka_producer_consumer
+pip install -r requirements.txt
+python kafka_producer.py
+Run Data Processing Pipeline Application (Spark Streaming):
+```
+```bash
+
+cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_data_processing
+spark-submit --master local[*] --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,mysql:mysql-connector-java:5.1.49 --files /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_data_processing/datamaking_app.conf /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_data_processing/realtime_data_processing.py
+```
+Keep monitoring the real-time dashboard at http://127.0.0.1:8000/.
+
 
 

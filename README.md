@@ -81,8 +81,8 @@ Run Kafka Producer Application (Stream Data Simulator):
 cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/kafka_producer_consumer
 pip install -r requirements.txt
 python kafka_producer.py
-Run Data Processing Pipeline Application (Spark Streaming):
 ```
+Run Data Processing Pipeline Application (Spark Streaming):
 ```bash
 
 cd /home/datamaking/workarea/code/course_download/ecom-real-time-case-study/realtime_data_processing

@@ -16,7 +16,7 @@ The purpose of this project is to create a robust, real-time dashboard that proc
 
 ## How It Works
 
-1. **Real-Time Dashboard Application (Django):**
+1. *Real-Time Dashboard Application (Django):*
    - Navigate to the `realtime_charts` directory.
    - Activate the Python virtual environment.
    - Install required Python packages.
